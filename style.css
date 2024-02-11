@@ -84,7 +84,7 @@ body{
 	}
 }
 .completed-task{
-	& :first-child::before{
+	& :first-child::before, & p{
 		text-decoration: line-through;
 		color: var(--primary);
 	}
