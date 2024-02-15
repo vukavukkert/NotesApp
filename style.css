@@ -37,7 +37,6 @@ body{
 		}
 	}
 }
-
 .element-generic-style {
 	& *{
 		font-size: 3vw;
@@ -76,7 +75,7 @@ body{
 			background-color: var(--secondary);
 		}
 	}
-	ul &:hover, &:hover, &:hover *{
+	&:hover{
 		ul &, & *{
 			transition: background-color ease-in 0.2s;
 			background-color: var(--foreground);
@@ -115,11 +114,11 @@ body{
 		&:hover{
 			&#createButton{
 				transition: background-color ease-in 0.2s;
-				background-color: var(--primary);
+				background-color: var(--secondary);
 			}
 			&#clearButton{
 				transition: background-color ease-in 0.2s;
-				background-color: var(--foreground);
+				background-color: var(--secondary);
 			}
 			
 		}
