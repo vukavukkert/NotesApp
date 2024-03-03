@@ -148,3 +148,26 @@ body{
 .awaiting-task :first-child:hover:before, .completed-task :first-child::before{
 	content: '✔️';
 }
+
+.footer{
+	background-color: var(--foreground);
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 100px;
+	& p {
+		font-size: 100px;
+		text-align: center;
+		margin: 0px;
+		@media screen and (min-width: 600px) /* Desktop */ {
+			transition: 0.2s;
+			font-size: 100px;
+		  }
+		@media screen and (max-width: 600px) /* Mobile */ {
+			transition: 0.2s;
+			font-size: 60px;
+			margin: 20px;
+		}
+	}
+	
+}
