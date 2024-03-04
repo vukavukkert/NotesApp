@@ -1,4 +1,4 @@
-let taskList = [{content: "1", isCompleted: false}];
+let taskList = [{}];
 
 loadTasks();
 
@@ -59,7 +59,7 @@ function deleteTask(button) {
 function clearAll() {
     tasks = document.getElementById("tasks");
     tasks.innerHTML = "";
-    taskList.clearAll;
+    taskList = [{}];
     saveList();
 }
 
