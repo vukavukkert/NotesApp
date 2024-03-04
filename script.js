@@ -4,7 +4,7 @@ loadTasks();
 
 function loadTasks(){
     taskList = (JSON.parse(Cookies.get("taskList")))
-    task.forEach(element => {
+    taskList.forEach(element => {
         drawTask(element.content, element.isCompleted);
     });
 }
